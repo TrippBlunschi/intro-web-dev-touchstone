@@ -9,10 +9,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-
 }
-
-
 
 body {
     margin: 1rem 0;
@@ -41,12 +38,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-
-@media (min-width: 768px) {
-    body {}
-}
-
 
 
 #main-header {
@@ -100,15 +91,9 @@ main li {
     margin-bottom: .5rem;
 }
 
-
-
 @media (min-width: 825px) {
     div.columns {
         flex-direction: row;
-    }
-
-    .flex-item {
-        flex: 1;
     }
 }
 
@@ -116,13 +101,14 @@ figure {
     margin: 0;
     padding: 0;
 }
+
 figcaption {
     padding: 1rem;
     text-align: center;
 }
 
 .sizeable-image {
-     display: block;
+    display: block;
     width: 100%;
     max-width: 100rem;
     height: auto;
@@ -131,31 +117,34 @@ figcaption {
 video {
     display: block;
     width: 100%;
-    max-width: 100rem;
+    max-width: 60rem;
     height: auto;
     margin-inline: auto;
 }
 
 button {
-border: none;
-background-color: var(--color-accent);
-color: white;
-padding: 12px 24px;
-font-size: 1rem;
-cursor: pointer;
+    border: none;
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 button:hover {
-background-color: var(--color-highlight)
+    background-color: var(--color-highlight);
+    color: var(--color-text);
 }
 
 button:focus {
-outline: 2px solid var(--color-highlight);
-outline-offset: 2px;
+    outline: 2px solid var(--color-highlight);
+    outline-offset: 2px;
+    color: var(--color-text);
 }
 
 button:active {
-background-color: var(--color-highlight)
+    background-color: var(--color-highlight);
+    color: var(--color-text);
 }
 
 input[type="text"],
@@ -167,7 +156,6 @@ textarea {
     font-size: 1rem;
     font-family: inherit;
     width: 100%;
-   
     box-sizing: border-box;
     margin-bottom: 20px;
 }
@@ -176,11 +164,9 @@ input[type="text"],
 input[type="email"],
 input[type="date"],
 textarea {
-   max-width: 30rem;
+    max-width: 30rem;
 }
 
 textarea {
     max-width: 100%;
 }
-
-
