@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery - About</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <a href="#main-content">Skip to main content</a>
-    <header>
+    <header id="main-header">
         <img src="images/bakery-logo_c.png" alt="North Star Bakery" width="100" height="100" />
         <nav aria-label="Primary">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +26,8 @@
         <picture>
             <source srcset="images/bakery-feature-large_c.png" media="(min-width: 800px)">
             <source srcset="images/bakery-feature-small_c.png" media="(min-width: 500px)">
-            <img src="images/bakery-feature-small_c.png" alt="Delicious cookies stacked on trays in a case" />
+            <img class="sizeable-image" src="images/bakery-feature-small_c.png"
+                alt="Delicious cookies stacked on trays in a case" />
         </picture>
         <section>
             <h2>Our Story</h2>
@@ -56,17 +58,26 @@
         </section>
         <section>
             <h2>Staff Highlights</h2>
-            <h3>Maria - Our Head Baker</h3>
-            <p>Maria has been baking artisan breads for 8 years.
-                She takes great care in her preparation and in the ingredients she chooses.
-                Her favorite thing we make is the rosemary focaccia.</p>
-            <h3>Daniel - Events Coordinator</h3>
-            <p>Daniel loves to make your life happy.
-                He knows that working with the community to help them matters.
-                His favorite thing we make is the North Star Signature Loaf</p>
-            <h3>Sophia - Sales Associate</h3>
-            <p>Sophia has been with North Star for 2 years. She's also a college student taking classes at night.
-                Her favorite thing we make is pumpkin pie.</p>
+            <div class="columns">
+                <div>
+                    <h3>Maria - Our Head Baker</h3>
+                    <p>Maria has been baking artisan breads for 8 years.
+                        She takes great care in her preparation and in the ingredients she chooses.
+                        Her favorite thing we make is the rosemary focaccia.</p>
+                </div>
+                <div>
+                    <h3>Daniel - Events Coordinator</h3>
+                    <p>Daniel loves to make your life happy.
+                        He knows that working with the community to help them matters.
+                        His favorite thing we make is the North Star Signature Loaf</p>
+                </div>
+                <div>
+                    <h3>Sophia - Sales Associate</h3>
+                    <p>Sophia has been with North Star for 2 years. She's also a college student taking classes at
+                        night.
+                        Her favorite thing we make is pumpkin pie.</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

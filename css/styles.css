@@ -1,0 +1,174 @@
+:root {
+    --color-background: #fff7e8;
+    --color-text: #3b241b;
+    --color-accent: #a84324;
+    --color-highlight: #d79a2b;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    margin: 1rem 0;
+    min-height: 100vh;
+    line-height: 1.6;
+    color: var(--color-text);
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    padding-inline: 1rem;
+    max-width: 70rem;
+    margin-inline: auto;
+}
+
+main {
+    max-width: 70rem;
+    margin-inline: auto;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+    body {}
+}
+
+
+
+#main-header {
+    display: flex;
+    margin: 1rem 0
+}
+
+#main-header nav {
+    display: flex;
+
+}
+
+#main-header nav a {
+    color: var(--color-background)
+}
+
+#main-header nav ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+#main-header nav ul li {
+    display: inline-block;
+    width: 5rem;
+    padding: .5rem;
+    margin: .07rem;
+    text-align: center;
+    background-color: var(--color-accent);
+    transition: background-color 0.2s;
+}
+
+div.columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    height: auto;
+}
+
+div.columns div {
+    padding: 1rem;
+}
+
+div.columns ul {
+    padding: .7rem;
+}
+
+
+main li {
+    margin-bottom: .5rem;
+}
+
+
+
+@media (min-width: 825px) {
+    div.columns {
+        flex-direction: row;
+    }
+
+    .flex-item {
+        flex: 1;
+    }
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+figcaption {
+    padding: 1rem;
+    text-align: center;
+}
+
+.sizeable-image {
+     display: block;
+    width: 100%;
+    max-width: 100rem;
+    height: auto;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 100rem;
+    height: auto;
+    margin-inline: auto;
+}
+
+button {
+border: none;
+background-color: var(--color-accent);
+color: white;
+padding: 12px 24px;
+font-size: 1rem;
+cursor: pointer;
+}
+
+button:hover {
+background-color: var(--color-highlight)
+}
+
+button:focus {
+outline: 2px solid var(--color-highlight);
+outline-offset: 2px;
+}
+
+button:active {
+background-color: var(--color-highlight)
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    width: 100%;
+    max-width: 50rem;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+

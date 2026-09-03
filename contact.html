@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery - Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <a href="#main-content">Skip to main content</a>
-    <header>
+    <header id="main-header">
         <img src="images/bakery-logo_c.png" alt="North Star Bakery" width="100" height="100" />
         <nav aria-label="Primary">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
@@ -33,17 +34,17 @@
                         <input type="radio" name="request-type" value="inquiry" required> Inquiry
                     </label><br>
                     <br>
-                    <label for="name">Name:</label> <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label><br> <input type="text" id="name" name="name" required>
                     <br>
-                    <label for="email">Email:</label> <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label><br> <input type="email" id="email" name="email" required>
                     <br>
-                    <label for="pickup-date">Pickup Date:</label> <input type="date" id="pickup-date"
+                    <label for="pickup-date">Pickup Date</label><br> <input type="date" id="pickup-date"
                         name="pickup-date">
                     <br>
-                    <label for="details">Item Details:</label>
+                    <label for="details">Item Details</label><br>
                     <textarea id='details' name="details" rows="4" cols=50 required></textarea>
                     <br>
-                    <label for="allergies">Allergy notes:</label>
+                    <label for="allergies">Allergy notes:</label><br>
                     <textarea id='allergies' name="allergies" rows="4" cols=50>
                     </textarea>
                     <br>
@@ -53,36 +54,57 @@
         </section>
         <section>
             <h2>Hours and Locations</h2>
-            <p>We have 2 locations to serve you</p>
-            <h3>Marietta</h3>
-            <p>1234 N. Main Avenue<br>
-                Marietta, GA 12345<br>
-                (123) 456-7890<br>
-            </p>
-            <ul>
-                <li><strong>Monday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Tuesday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Wednesday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Thursday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Friday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Saturday</strong> 7:00am - 5:00pm</li>
-                <li><strong>Sunday</strong> Closed</li>
-            </ul>
-            <h3>Smyrna</h3>
-            <p>
-                5678 Jones Road<br>
-                Smyrna, GA 12345<br>
-                (123) 456-7890<br>
-            </p>
-            <ul>
-                <li><strong>Monday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Tuesday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Wednesday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Thursday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Friday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Saturday</strong> 7:00am - 5:00pm</li>
-                <li><strong>Sunday</strong> Closed</li>
-            </ul>
+            <div class="columns">
+                <div>
+                    <h3>Marietta</h3>
+                    <p>1234 N. Main Avenue<br>
+                        Marietta, GA 12345<br>
+                        (123) 456-7890<br>
+                    </p>
+                    <ul>
+                        <li><strong>Monday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Tuesday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Wednesday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Thursday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Friday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Saturday</strong> 7:00am - 5:00pm</li>
+                        <li><strong>Sunday</strong> Closed</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Smyrna</h3>
+                    <p>
+                        5678 Jones Road<br>
+                        Smyrna, GA 12345<br>
+                        (123) 456-7890<br>
+                    </p>
+                    <ul>
+                        <li><strong>Monday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Tuesday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Wednesday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Thursday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Friday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Saturday</strong> 7:00am - 5:00pm</li>
+                        <li><strong>Sunday</strong> Closed</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Atlanta</h3>
+                    <p>1234 N. Peachtree Steet<br>
+                        Atlanta, GA 12345<br>
+                        (123) 456-7890<br>
+                    </p>
+                    <ul>
+                        <li><strong>Monday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Tuesday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Wednesday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Thursday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Friday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Saturday</strong> 7:00am - 5:00pm</li>
+                        <li><strong>Sunday</strong> Closed</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

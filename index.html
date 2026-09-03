@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <a href="#main-content">Skip to main content</a>
-    <header>
+    <header id="main-header">
         <img src="images/bakery-logo_c.png" alt="North Star Bakery" width="100" height="100" />
         <nav aria-label="Primary">
             <ul>
@@ -22,69 +23,113 @@
     </header>
     <main id="main-content">
         <h1>Welcome to North Star Bakery</h1>
-        <video controls width="640" height="360" preload="metadata">
-            <source src="media/bakery-behind-scenes_c.mp4" type="video/mp4">
-            <p>Your browser does not support the video element.</p>
-            <p><a href="media/bakery-behind-scenes_c.mp4">Download the video</a> instead.</p>
-        </video>
         <p>
             Hi there! Welcome to North Star Bakery.
             Whether you are driving to work, planning an event or just picking up something
             delicious for the family, North Star Bakery is your local source for exceptional
             baked goods and value.
         </p>
+        <video controls width="320px" preload="metadata">
+            <source src="media/bakery-behind-scenes_c.mp4" type="video/mp4">
+            <p>Your browser does not support the video element.</p>
+            <p><a href="media/bakery-behind-scenes_c.mp4">Download the video</a> instead.</p>
+        </video>
+
         <section>
             <h2>What We're Known For</h2>
-            <h3>Products</h3>
-            <ul>
-                <li><strong>North Star Signature Sourdough</strong> - Artisan loaf with a crisp crust and soft tangy
-                    center </li>
-                <li><strong>Honey Oat Country Bread</strong> - Hearty loaf made with rolled oats</li>
-                <li><strong>Celebration Cakes</strong> - Cakes that pair with the big moments in your life</li>
-                <li><strong>Made-To-Order Treats</strong> - Got a hankering? We can do it! </li>
+            <div class="columns">
+                <div>
+                    <h3>Products</h3>
+                    <ul>
+                        <li><strong>North Star Signature Sourdough</strong> - Artisan loaf with a crisp crust and soft
+                            tangy
+                            center </li>
+                        <li><strong>Honey Oat Country Bread</strong> - Hearty loaf made with rolled oats</li>
+                        <li><strong>Celebration Cakes</strong> - Cakes that pair with the big moments in your life</li>
+                        <li><strong>Made-To-Order Treats</strong> - Got a hankering? We can do it! </li>
 
-            </ul>
-            <h3>Services</h3>
-            <ul>
-                <li><strong>Bakery Pre-orders</strong> - Reserve breads, pastries, and other favorites for pickup</li>
-                <li><strong>Custom Cakes</strong> - Birthday, anniversary, graduation, and other celebration cakes</li>
-                <li><strong>Pastry Boxes</strong> - Assorted pastries for offices, meetings, brunches, and gatherings
-                </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Services</h3>
+                    <ul>
+                        <li><strong>Bakery Pre-orders</strong> - Reserve breads, pastries, and other favorites for
+                            pickup
+                        </li>
+                        <li><strong>Custom Cakes</strong> - Birthday, anniversary, graduation, and other celebration
+                            cakes
+                        </li>
+                        <li><strong>Pastry Boxes</strong> - Assorted pastries for offices, meetings, brunches, and
+                            gatherings
+                        </li>
 
-            </ul>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Hours and Locations</h2>
-            <p>We have 2 locations to serve you</p>
-            <h3>Marietta</h3>
-            <p>1234 N. Main Avenue<br>
-                Marietta, GA 12345<br>
-                (123) 456-7890<br>
-            </p>
-            <ul>
-                <li><strong>Monday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Tuesday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Wednesday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Thursday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Friday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Saturday</strong> 7:00am - 5:00pm</li>
-                <li><strong>Sunday</strong> Closed</li>
-            </ul>
-            <h3>Smyrna</h3>
             <p>
-                5678 Jones Road<br>
-                Smyrna, GA 12345<br>
-                (123) 456-7890<br>
+                We have 3 locations to serve you in the metro Atlanta area.
+                Each location has daily specials that you can't find at the other locations.
+                You're going to want to visit each one!
+
             </p>
-            <ul>
-                <li><strong>Monday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Tuesday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Wednesday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Thursday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Friday</strong> 8:00am - 5:00pm</li>
-                <li><strong>Saturday</strong> 7:00am - 5:00pm</li>
-                <li><strong>Sunday</strong> Closed</li>
-            </ul>
+
+            <div class="columns">
+                <div>
+                    <h3>Marietta</h3>
+                    <p>1234 N. Main Avenue<br>
+                        Marietta, GA 12345<br>
+                        (123) 456-7890<br>
+                    </p>
+                    <ul>
+                        <li><strong>Monday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Tuesday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Wednesday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Thursday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Friday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Saturday</strong> 7:00am - 5:00pm</li>
+                        <li><strong>Sunday</strong> Closed</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Smyrna</h3>
+                    <p>
+                        5678 Jones Road<br>
+                        Smyrna, GA 12345<br>
+                        (123) 456-7890<br>
+                    </p>
+                    <ul>
+                        <li><strong>Monday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Tuesday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Wednesday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Thursday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Friday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Saturday</strong> 7:00am - 5:00pm</li>
+                        <li><strong>Sunday</strong> Closed</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Atlanta</h3>
+                    <p>1234 N. Peachtree Steet<br>
+                        Atlanta, GA 12345<br>
+                        (123) 456-7890<br>
+                    </p>
+                    <ul>
+                        <li><strong>Monday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Tuesday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Wednesday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Thursday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Friday</strong> 8:00am - 5:00pm</li>
+                        <li><strong>Saturday</strong> 7:00am - 5:00pm</li>
+                        <li><strong>Sunday</strong> Closed</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
         </section>
         <section>
             <h2>Featured Item of the Week</h2>
@@ -93,8 +138,8 @@
                 Buy two and get 1 free! <a href="contact.html">Pre-order today!</a>
             </p>
             <figure>
-                <img src="images/bakery-signature-loaf_c.png"
-                    alt="Signature Loaf wrapped in a red and white checkered towel" width="500" />
+                <img class="sizeable-image" src="images/bakery-signature-loaf_c.png"
+                    alt="Signature Loaf wrapped in a red and white checkered towel" width="100px" />
                 <figcaption>Come find out why our signature loaf is amazing!</figcaption>
             </figure>
 
