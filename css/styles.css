@@ -167,8 +167,20 @@ textarea {
     font-size: 1rem;
     font-family: inherit;
     width: 100%;
-    max-width: 50rem;
+   
     box-sizing: border-box;
     margin-bottom: 20px;
 }
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+   max-width: 30rem;
+}
+
+textarea {
+    max-width: 100%;
+}
+
 
