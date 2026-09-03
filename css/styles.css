@@ -17,8 +17,6 @@ body {
     line-height: 1.6;
     color: var(--color-text);
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--color-text);
     background-color: var(--color-background);
     padding-inline: 1rem;
     max-width: 70rem;
@@ -156,14 +154,7 @@ textarea {
     font-size: 1rem;
     font-family: inherit;
     width: 100%;
-    box-sizing: border-box;
     margin-bottom: 20px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="date"],
-textarea {
     max-width: 30rem;
 }
 
