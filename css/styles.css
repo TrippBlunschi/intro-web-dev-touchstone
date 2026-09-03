@@ -64,7 +64,6 @@ a:hover {
     margin: .07rem;
     text-align: center;
     background-color: var(--color-accent);
-    transition: background-color 0.2s;
 }
 
 div.columns {
