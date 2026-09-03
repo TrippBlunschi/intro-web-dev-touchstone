@@ -10,7 +10,7 @@
 <body>
     <a href="#main-content">Skip to main content</a>
     <header>
-        <img src="images/bakery-logo_c.png" alt="North Start Bakery Logo" width="100" height="100" />
+        <img src="images/bakery-logo_c.png" alt="North Star Bakery" width="100" height="100" />
         <nav aria-label="Primary">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -27,21 +27,21 @@
                 <fieldset>
                     <legend>Pre-order or ask a question</legend>
                     <label>
-                        <input type="radio" name="request-type" value="preorder"> Pre order
+                        <input type="radio" name="request-type" value="preorder" required> Pre order
                     </label><br>
                     <label>
-                        <input type="radio" name="request-type" value="inquiry"> Inquiry
+                        <input type="radio" name="request-type" value="inquiry" required> Inquiry
                     </label><br>
                     <br>
-                    <label for="name">Name:</label> <input type="text" id="name" name="name">
+                    <label for="name">Name:</label> <input type="text" id="name" name="name" required>
                     <br>
-                    <label for="email">Email:</label> <input type="email" id="email" name="email">
+                    <label for="email">Email:</label> <input type="email" id="email" name="email" required>
                     <br>
                     <label for="pickup-date">Pickup Date:</label> <input type="date" id="pickup-date"
                         name="pickup-date">
                     <br>
                     <label for="details">Item Details:</label>
-                    <textarea id='details' name="details" rows="4" cols=50></textarea>
+                    <textarea id='details' name="details" rows="4" cols=50 required></textarea>
                     <br>
                     <label for="allergies">Allergy notes:</label>
                     <textarea id='allergies' name="allergies" rows="4" cols=50>
