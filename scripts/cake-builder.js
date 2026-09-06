@@ -26,6 +26,12 @@ const questionLabel = document.getElementById('question');
 const options = document.getElementById('options');
 
 button.addEventListener('click', function () {
+
+    if (button.dataset.action === "order") {
+        window.location.href = "contact.html";
+        return;
+    }
+
     // get the data
     let data = localStorage.getItem(storageKey)
     data = JSON.parse(data);
@@ -59,9 +65,7 @@ button.addEventListener('click', function () {
             questionLabel.textContent = "That's all we need."
             options.replaceChildren();
             button.value = 'Order Your Cake!'
-            button.addEventListener("click", () => {
-                window.location.href = "contact.html";
-            });
+            button.dataset.action = "order";
         }
         localStorage.setItem(storageKey, JSON.stringify(data))
     }
@@ -71,9 +75,9 @@ initialize();
 
 function initialize() {
     const data = [
-        { step: 1, answer: null, isCurrent: true },
-        { step: 2, answer: null, isCurrent: false },
-        { step: 3, answer: null, isCurrent: false },
+        { step: 1, property: 'Size:', answer: null, isCurrent: true },
+        { step: 2, property: 'Flavor:', answer: null, isCurrent: false },
+        { step: 3, property: 'Frosting:', answer: null, isCurrent: false },
     ]
 
     localStorage.setItem(storageKey, JSON.stringify(data));
