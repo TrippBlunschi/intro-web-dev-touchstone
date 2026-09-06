@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery - Contact</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="scripts/get-cake-order.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+
 </head>
 
 <body>
@@ -28,6 +29,7 @@
             <form action="/pre-order" method="post">
                 <fieldset>
                     <legend>Pre-order or ask a question</legend>
+                    <span id="request-type-error" class="error-message" aria-live="polite"></span><br>
                     <label>
                         <input type="radio" name="request-type" value="preorder" required> Pre order
                     </label><br>
@@ -35,21 +37,29 @@
                         <input type="radio" name="request-type" value="inquiry" required> Inquiry
                     </label><br>
                     <br>
-                    <label for="name">Name</label><br> <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                    <span id="name-error" class="error-message" aria-live="polite"></span><br>
+                    <input type="text" id="name" name="name" required aria-describedby="name-error">
                     <br>
-                    <label for="email">Email</label><br> <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                    <span id="email-error" class="error-message" aria-live="polite"></span><br>
+                    <input type="email" id="email" name="email" required aria-describedby="email-error">
+
                     <br>
-                    <label for="pickup-date">Pickup Date</label><br> <input type="date" id="pickup-date"
-                        name="pickup-date">
+                    <label for="pickup-date">Pickup Date</label>
+                    <span id="pickup-date-error" class="error-message" aria-live="polite"></span><br>
+                    <input type="date" id="pickup-date" name="pickup-date" aria-describedby="pickup-date-error">
                     <br>
-                    <label for="details">Item Details</label><br>
-                    <textarea id='details' name="details" rows="4" cols=50 required></textarea>
+                    <label for="details">Item Details</label>
+                    <span id="details-error" class="error-message" aria-live="polite"></span><br>
+                    <textarea id='details' name="details" rows="4" cols=50 required
+                        aria-describedby="details-error"></textarea>
                     <br>
                     <label for="allergies">Allergy notes:</label><br>
                     <textarea id='allergies' name="allergies" rows="4" cols=50>
                     </textarea>
                     <br>
-                    <button type="submit">Submit your order or inquiry</button>
+                    <button id="submitOrderOrInquire" type="submit">Submit your order or inquiry</button>
                 </fieldset>
             </form>
         </section>
@@ -112,6 +122,10 @@
         <hr>
         <p>&copy; 2026 North Star Bakery</p>
     </footer>
+    <dialog id="confirmation-dialog">
+        <p>Your request was completed successfully.</p>
+        <button id="close-dialog" type="button">Close</button>
+    </dialog>
 </body>
 
 </html>

@@ -62,9 +62,9 @@ button.addEventListener('click', function () {
             setQuestion(questions, nextItem.step);
             nextItem.isCurrent = true;
         } else {
-            questionLabel.textContent = "That's all we need."
+            questionLabel.textContent = "That's all we need! Click order below."
             options.replaceChildren();
-            button.value = 'Order Your Cake!'
+            button.innerHTML = 'Order Your Cake!'
             button.dataset.action = "order";
         }
         localStorage.setItem(storageKey, JSON.stringify(data))

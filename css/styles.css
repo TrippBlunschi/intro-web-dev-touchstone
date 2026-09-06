@@ -161,3 +161,7 @@ textarea {
     max-width: 100%;
 }
 
+.error-message {
+  
+  color: red;
+}
