@@ -38,11 +38,11 @@ function isValidForm() {
 
     let isValid = true;
 
-
     const selectedRequestType = document.querySelector('input[name="request-type"]:checked');
     const requestTypeError = document.getElementById("request-type-error");
     if (!selectedRequestType) {
         requestTypeError.textContent = "Please select either Pre-order or Inquiry.";
+        isValid = false;
     } else {
         requestTypeError.textContent = "";
     }
@@ -78,6 +78,7 @@ function isValidForm() {
     const pickupDateError = document.getElementById("pickup-date-error");
     if (!isValidPickupDate(pickupDate.value)) {
         pickupDateError.textContent = "Please select today or a future date.";
+        isValid = false;
     } else {
         pickupDateError.textContent = "";
     }
