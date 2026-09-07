@@ -9,7 +9,7 @@ if (data) {
         "*** CAKE BUILDER DETAILS ***",
         ...data
             .filter((item) => item.answer)
-            .map((item) => `${item.property}: ${item.answer}`)
+            .map((item) => `${item.property} ${item.answer}`)
     ].join("\n");
 }
 
