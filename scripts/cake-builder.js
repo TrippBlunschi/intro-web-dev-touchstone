@@ -39,14 +39,9 @@ button.addEventListener('click', function () {
         alert("There was an issue");
     }
 
-    console.log('data', data)
-
     // find the currently displayed question
     let item = data.find(d => d.isCurrent);
     let nextItem = data.find(d => d.step == item.step + 1)
-
-    console.log('item', item)
-    console.log('next', nextItem)
 
     // get the value of the radio buttons,
     const value =
